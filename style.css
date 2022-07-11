@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  margin: 50px 0 30px;
+  text-align: center;
+}
+
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq {
+  background-color: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 7px;
+  margin: 10px 0;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.faq.active {
+  background-color: #fff;
+  box-shadow: 
+  0 3px 6px rgba(0, 0, 0, 0.1),
+  0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq.active::before,
+.faq.active::after {
+  color: #2ecc71;
+  content: '\f075';
+  font-family: 'Font Awesome 6 Free';
+  font-size: 7rem;
+  left: 20px;
+  opacity: 0.2;
+  position: absolute;
+  top: 20px;
+  z-index: 0;
+}
+
+.faq.active::before {
+  color: #3498db;
+  left: -10px;
+  top: -30px;
+  transform: rotateY(180deg);
+}
+
+.faq-title {
+  margin: 0 35px 0 0;
+}
+
+.faq-text {
+  
+  margin: 3px 0 0;
+}
